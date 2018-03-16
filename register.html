@@ -5,15 +5,15 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 		<script src="js/app.js"></script>
 	</head>
-	<body>
-		<form type="submit">
+	<body onload="shell.initRegisterModule()">
+		<form id="registerForm">
 			Username: <br />
 			<input type="text" id="username" /><br />
 			Password: <br />
 			<input type="password" id="password" /><br />
 			Confirm password: <br />
 			<input type="password" id="cpassword" /><br />
-			<button id="submit" value="submit">Register</button>
+			<button type="button" id="submit" value="submit">Register</button>
 		</form>
 		<br />
 		<a href="index.html">Back</a>
